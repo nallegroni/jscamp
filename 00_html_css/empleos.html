@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+<head>
+    <meta charset="UTF-8">
+    <title>ITJobs - Empleos</title>
+    <meta name="description" content="Encuentra las mejores ofertas de empleo en tecnología y desarrollo web.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#09f"/>
+
+    <link rel="icon" href="./assets/icon.png" type="image/png">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body class="page-empleos">
+    <header class="main-header">
+        <h1>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 4l-5 8l5 8" /><path d="M16 4l5 8l-5 8" /></svg>
+            ITJobs
+        </h1>
+        
+        <nav>
+            <a href="./index.html">Inicio</a>
+            <a href="./empleos.html">Empleos</a>
+            <a href="#">Empresas</a>
+            <a href="#">Recursos</a>
+        </nav>
+
+        <div class="header-actions">
+            <a href="#" class="btn btn-primary">Subir CV</a>
+            <a href="perfil.html" class="profile-link">
+                <img src="./assets/foto_perfil.jpg" alt="Perfil">
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="search-hero-section">          
+            <h1>Encuentra tu próximo empleo</h1>
+            <p>Explora las miles de oportunidades en el sector tecnológico.</p>
+            
+            <form role="search" class="search-form">
+                <div class="search-form-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
+                    <input type="text" placeholder="Buscar empleo por título, habilidad o empresa" aria-label="Buscar empleos">
+                </div>
+            </form>
+            
+            <div class="filters">
+                <select name="Tecnología" id="tecnología">
+                    <option disabled selected>Tecnología</option>
+                    <option value="python">Python</option>
+                    <option value="java">Java</option>
+                </select>
+                <select name="Ubicación" id="ubicación">
+                    <option disabled selected>Ubicación</option>
+                    <option value="remoto">Remoto</option>
+                </select>
+                <select name="Tipo de contrato" id="tipo-contrato">
+                    <option disabled selected>Tipo de contrato</option>
+                    <option value="indefinido">Indefinido</option>
+                </select>
+                <select name="Nivel de experiencia" id="nivel-experiencia">
+                    <option disabled selected>Nivel de experiencia</option>
+                    <option value="senior">Senior</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="results-section">
+            <header>
+                <h2>Resultados de búsqueda</h2>
+                <p>Mostrando 2,412 empleos</p>
+            </header>
+            
+            <div class="job-listing">
+                <article class="job-card">
+                    <div class="job-details">
+                        <h3>Título del empleo</h3>
+                        <p class="job-company-location">Empresa | Ubicación</p>
+                        <p class="job-description">Descripción breve del empleo.</p>
+                    </div>
+                    <a href="#" class="btn btn-cta">Aplicar</a>
+                </article>
+                <article class="job-card">
+                    <div class="job-details">
+                        <h3>Título del empleo</h3>
+                        <p class="job-company-location">Empresa | Ubicación</p>
+                        <p class="job-description">Descripción breve del empleo.</p>
+                    </div>
+                    <a href="#" class="btn btn-cta">Aplicar</a>
+                </article>
+                <article class="job-card">
+                    <div class="job-details">
+                        <h3>Título del empleo</h3>
+                        <p class="job-company-location">Empresa | Ubicación</p>
+                        <p class="job-description">Descripción breve del empleo.</p>
+                    </div>
+                    <a href="#" class="btn btn-cta">Aplicar</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="pagination-section"> 
+            <a href="#" class="btn">&lt;</a>
+            <a href="#" class="btn">1</a>
+            <a href="#" class="btn">2</a>
+            <a href="#" class="btn">3</a>
+            <a href="#" class="btn">4</a>
+            <a href="#" class="btn">5</a>
+            <a href="#" class="btn">&gt;</a>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <small>&copy; 2025 ITJobs. Todos los derechos reservados.</small>
+    </footer>
+</body>
+</html>
