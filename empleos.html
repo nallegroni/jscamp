@@ -10,6 +10,8 @@
 
     <link rel="icon" href="./assets/icon.png" type="image/png">
     <link rel="stylesheet" href="./styles.css">
+
+    <script type="module" src="./main.js"></script>
 </head>
 
 <body class="page-empleos">
@@ -29,7 +31,7 @@
         <div class="header-actions">
             <a href="#" class="btn btn-primary">Subir CV</a>
             <a href="perfil.html" class="profile-link">
-                <img src="./assets/foto_perfil.jpg" alt="Perfil">
+                <itjobs-avatar service="github" username="nallegroni" size="40"></itjobs-avatar>
             </a>
         </div>
     </header>
@@ -47,67 +49,39 @@
             </form>
             
             <div class="filters">
-                <select name="Tecnología" id="tecnología">
-                    <option disabled selected>Tecnología</option>
-                    <option value="python">Python</option>
-                    <option value="java">Java</option>
+                <select class="job-filter" name="Tecnología" id="filter-tecnologia">
+                    <option value="" selected>Tecnología</option>
+                    <!-- Las opciones se generan dinamicamente -->
                 </select>
-                <select name="Ubicación" id="ubicación">
-                    <option disabled selected>Ubicación</option>
-                    <option value="remoto">Remoto</option>
+                <select class="job-filter" name="Ubicación" id="filter-ubicacion">
+                    <option value="" selected>Ubicación</option>
+                    <!-- Las opciones se generan dinamicamente -->
                 </select>
-                <select name="Tipo de contrato" id="tipo-contrato">
-                    <option disabled selected>Tipo de contrato</option>
-                    <option value="indefinido">Indefinido</option>
-                </select>
-                <select name="Nivel de experiencia" id="nivel-experiencia">
-                    <option disabled selected>Nivel de experiencia</option>
+                <select class="job-filter" name="Nivel de experiencia" id="filter-nivel-experiencia">
+                    <option value="" selected>Nivel de experiencia</option>
+                    <option value="internship">Pasantía</option>
+                    <option value="trainee">Trainee</option>
+                    <option value="junior">Junior</option>
+                    <option value="semi-senior">Semi-Senior</option>
                     <option value="senior">Senior</option>
+                    <option value="lead">Lead</option>
                 </select>
             </div>
         </section>
 
         <section class="results-section">
-            <header>
+            <header class="results-header">
                 <h2>Resultados de búsqueda</h2>
-                <p>Mostrando 2,412 empleos</p>
             </header>
             
             <div class="job-listing">
-                <article class="job-card">
-                    <div class="job-details">
-                        <h3>Título del empleo</h3>
-                        <p class="job-company-location">Empresa | Ubicación</p>
-                        <p class="job-description">Descripción breve del empleo.</p>
-                    </div>
-                    <a href="#" class="btn btn-cta">Aplicar</a>
-                </article>
-                <article class="job-card">
-                    <div class="job-details">
-                        <h3>Título del empleo</h3>
-                        <p class="job-company-location">Empresa | Ubicación</p>
-                        <p class="job-description">Descripción breve del empleo.</p>
-                    </div>
-                    <a href="#" class="btn btn-cta">Aplicar</a>
-                </article>
-                <article class="job-card">
-                    <div class="job-details">
-                        <h3>Título del empleo</h3>
-                        <p class="job-company-location">Empresa | Ubicación</p>
-                        <p class="job-description">Descripción breve del empleo.</p>
-                    </div>
-                    <a href="#" class="btn btn-cta">Aplicar</a>
-                </article>
+                <!-- Aca se generan los <article> (job-cards) de forma dinamica -->
             </div>
         </section>
 
         <section class="pagination-section"> 
             <a href="#" class="btn">&lt;</a>
-            <a href="#" class="btn">1</a>
-            <a href="#" class="btn">2</a>
-            <a href="#" class="btn">3</a>
-            <a href="#" class="btn">4</a>
-            <a href="#" class="btn">5</a>
+            <!-- Los botones de paginación se generan dinámicamente -->
             <a href="#" class="btn">&gt;</a>
         </section>
     </main>
